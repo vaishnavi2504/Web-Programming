@@ -1,0 +1,117 @@
+//To hide and show the html tag identified by id "lessMore"
+$(document).ready(function(){
+	$(".hide1").click(function(){
+    $("#lessMore").hide();
+	});
+	$(".show").click(function(){
+    $("#lessMore").show();
+	});
+	});
+	
+	
+	// To toggle between hide and show of the html tag identified by id "magic"
+	$(document).ready(function(){
+	$(".hs1").click(function(){
+    $("#magic").toggle();
+    });
+	});
+	
+	
+	
+	// fadeIn event using keypress event
+	$(document).ready(function(){
+	 $("#ice").keypress(function(){
+     $("#diva").fadeIn();
+     $("#divb").fadeIn("slow");
+     $("#divc").fadeIn(3000);
+	 });
+  });
+  
+  //Fadein, fadeToggle through  dblclick event
+   $(document).ready(function(){
+      $(".btn1").dblclick(function(){
+        $("#fadein").fadeOut()
+      });
+      
+      $(".btn2").dblclick(function(){
+        $("#fadein").fadeIn();
+      });
+	
+	   $(".btn3").dblclick(function(){
+        $("#rose").fadeToggle();
+     });
+     
+  	 $(".btn9").dblclick(function(){
+        $("#becky").fadeTo("medium", 0.25);
+     });
+
+  });
+	
+	
+	//mouse enter and mouseleave events to change css properties
+	$(document).ready(function(){
+    $("#p333").mouseenter(function(){
+        $("#p333").css("background-color", "yellow");
+    });
+    $("#p333").mouseleave(function(){
+        $("#p333").css("background-color", "white");
+        
+    });
+  });
+  
+  
+  $(document).ready(function(){
+     $("#addCF").click(function(){
+        $("#customFields").append('<tr valign="top"><td><input type="text" class="code" name="customFieldValue[]" value="" placeholder="First Name" /> &nbsp; <input type="text" class="code" name="customFieldValue[]" value="" placeholder="Last Name" /> &nbsp;<input type="text" class="code" name="customFieldValue[]" value="" placeholder="Email" /> &nbsp; <input type="text" class="code" name="customFieldValue[]" value="" placeholder="Phone" /> &nbsp;<a href="javascript:void(0);" class="remCF">Remove</a></td></tr>');
+     });
+    
+     $("#customFields").on('click', '.remCF', function(){
+        $(this).parent().parent().remove();
+     });
+    
+    });
+	
+	
+	 $(document).ready(function(){
+     $(".ice").click(function(){
+     $("#pig").animate({
+      left:'250px',
+      opacity:'0.5',
+      height:'150px',
+      width:'150px'
+     });
+    });
+    });
+	
+	
+	$(document).ready(function(){
+  $("#bn").keydown(function(){
+    var div=$("#fire");
+    var div1=$("#fire");
+    var div2=$("#got");
+    div.animate({height:'100px',opacity:'0.4'},"slow");
+    div.animate({width:'100px',opacity:'0.8'},"slow");
+   div.animate({height:'100px',opacity:'0.4'},"slow");
+    div.animate({width:'100px',opacity:'0.8'},"slow");
+    div.animate({left:'100px',height:'100px',width:'100px'},"slow");
+    div.animate({fontSize:'3em'},"slow");
+
+    div1.animate({height:'100px',opacity:'0.4'},"slow");
+    div1.animate({width:'100px',opacity:'0.8'},"slow");
+    div1.animate({height:'100px',opacity:'0.4'},"slow");
+    div1.animate({width:'100px',opacity:'0.8'},"slow");
+    div1.animate({left:'300px',height:'100px',width:'100px'},"slow");
+    div1.animate({fontSize:'3em'},"slow");
+
+    div2.animate({height:'100px',opacity:'0.4'},"slow");
+    div2.animate({width:'100px',opacity:'0.8'},"slow");
+    div2.animate({height:'100px',opacity:'0.4'},"slow");
+    div2.animate({width:'100px',opacity:'0.8'},"slow");
+    div2.animate({left:'500px',height:'100px',width:'100px'},"slow");
+    div2.animate({fontSize:'3em'},"slow");
+
+
+  });
+});
+
+
